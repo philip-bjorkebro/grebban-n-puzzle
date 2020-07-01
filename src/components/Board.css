@@ -1,0 +1,40 @@
+:root {
+  --columns: 0;
+  --rows: 0;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75vmin;
+  margin: auto;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 26px;
+}
+
+.buttonContainer button {
+  height: 12vmin;
+  font-size: 4vmin;
+  padding: 1vmin 6vmin;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+
+.buttonContainer button:hover {
+  background-color: #333;
+  transition: background-color 0.05s;
+}

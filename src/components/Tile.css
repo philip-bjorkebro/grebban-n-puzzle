@@ -1,0 +1,73 @@
+.empty {
+  opacity: 0;
+}
+.tile-enter {
+  opacity: 0;
+}
+.tile-enter-done {
+  opacity: 0;
+}
+
+.tile-exit {
+  animation-name: var(--swipeDirection);
+  animation-duration: 0.1s;
+  animation-timing-function: ease-out;
+}
+
+.tile:hover {
+  filter: brightness(1.1);
+  transition: filter 0.05s;
+}
+.tile {
+  transition: filter 1s;
+  width: calc(75vmin / var(--columns));
+  height: calc(75vmin / var(--rows));
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: inset 0px 0px 0px 3px white;
+  font-size: calc(8vmin);
+  font-weight: 800;
+  border-radius: 10px;
+  outline: none;
+  background-color: #add8e6;
+}
+
+@keyframes leftSwipe {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rightSwipe {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes topSwipe {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes downSwipe {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(-0%);
+  }
+}
