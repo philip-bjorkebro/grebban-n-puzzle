@@ -11,13 +11,13 @@ Node Package Manager
 
 ## Installation
 
-Öppna Terminal/PowerShell och skriv dessa rader
+Öppna Terminal/Bash och skriv dessa rader
 
 ```
 git clone https://github.com/philipbjorkebro/grebban-n-puzzle.git
 cd grebban-n-puzzle
 npm install
-npm run
+npm start
 ```
 
 ## Konfiguration
